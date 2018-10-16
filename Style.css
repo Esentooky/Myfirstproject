@@ -1,0 +1,58 @@
+#nav li{
+	float: left;
+	position: relative;
+	list-style: none;
+	background-color: #ff3131;
+	width: 190px;
+}
+
+#nav a{
+	text-decoration: none;
+	display: block;
+	padding:35px 65px;
+	color: #ffffff;
+}
+
+#active a, #nav li:hover > a{
+	background: #b32424;
+}
+
+#nav ul{
+	visibility: hidden;
+	padding: 0;
+	position: absolute;
+}
+
+#nav li:hover >ul{
+	visibility: visible;
+	position: relative;
+}
+
+#nav ul a{
+	padding: 18.5px 65px;
+}
+
+#nav ul li:hover{
+	background: #d92a2a;
+}
+
+#nav li:firs-child:hover > ul{
+	left: 0;
+}
+
+#nav > li{
+	border-right:2px solid #d92a2a;
+}
+
+#nav > li:last-child{
+	border-right:none;
+}
+
+#nav li ul li{
+	border-left: 2px solid #d92a2a;
+	border-right: 2px solid #d92a2a;
+}
+
+#nav li:last-child ul li, #nav li:last-child ul{
+	border-left;none;
+}
